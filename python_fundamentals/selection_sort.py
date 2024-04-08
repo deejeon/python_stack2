@@ -4,7 +4,12 @@ def selection_sort(list):
     for i in range(len(list) - 1):
         current_min = list[i]
         for j in range(i + 1, len(list)):
-            if list[j] < list[i]:
-                list[i], list[j] = list[j], list[i]
+            if list[j] < current_min:
+                current_min = list[j]
                 swap_idx = j
+        if current_min != list[i]:
+            list[i], list[j] = list[j], list[i]
+    return list
+
+print(selection_sort([2,6,5,9,7,0]))
 
