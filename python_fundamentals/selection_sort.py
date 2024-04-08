@@ -8,7 +8,7 @@ def selection_sort(list):
                 current_min = list[j]
                 swap_idx = j
         if current_min != list[i]:
-            list[i], list[j] = list[j], list[i]
+            list[i], list[swap_idx] = list[swap_idx], list[i]
     return list
 
 print(selection_sort([2,6,5,9,7,0]))
