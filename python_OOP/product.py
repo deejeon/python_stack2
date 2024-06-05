@@ -27,6 +27,7 @@ class Product:
     
     def display_info(self):
         print("Name: ", self.name, "\nPrice: $", self.price, "\nWeight: ", self.weight, "\nBrand: ", self.brand, "\nStatus: ", self.status)
+        return self
 
 jordan1 = Product("Jordan 1", 180, 1.4, "Jordan")
 
