@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Dojo Survey Index</title>
+</head>
+<body>
+    <form action="result" method="post">
+        <div>
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="location">Dojo Location:</label>
+            <select name="location" id="location" required>
+                <option value="San Jose">San Jose</option>
+                <option value="Burbank">Burbank</option>
+                <option value="Las Vegas">Las Vegas</option>
+            </select>
+        </div>
+        <div>
+            <label for="language">Favorite Language:</label>
+            <select name="language" id="language" required>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+            </select>
+        </div>
+        <div>
+            <label for="comment">Comment (Optional):</label>
+            <textarea name="comment" id="comment"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
